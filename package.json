@@ -1,0 +1,50 @@
+{
+  "name": "use-h5p",
+  "version": "0.0.0",
+  "description": "React Hooks to be used with H5P.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "src/**/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "build": "tsc src/index.ts --outDir dist --declaration",
+    "publish-to-npm": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tietoevry-Create/use-h5p.git"
+  },
+  "keywords": [
+    "h5p"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tietoevry-Create/use-h5p/issues"
+  },
+  "homepage": "https://github.com/Tietoevry-Create/use-h5p#readme",
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "h5p-types": "^0.1.0",
+    "h5p-utils": "^2.1.0",
+    "happy-dom": "^5.0.0",
+    "np": "^7.6.1",
+    "prettier": "^2.6.2",
+    "prettier-config": "github:boyum/prettier-config",
+    "react-dom": "^18.1.0",
+    "typescript": "^4.7.3",
+    "vitest": "^0.14.1"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  },
+  "prettier": "prettier-config"
+}
