@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "alwaysStrict": true,
+    "strict": true,
+    "module": "AMD",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "dist",
+    "skipLibCheck": true
+  },
+  "exclude": ["vite.config.ts", "demo"]
+}
