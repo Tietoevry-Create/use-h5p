@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/index.js",
-    "src/**/*"
+    "dist",
+    "src"
   ],
   "scripts": {
     "test": "vitest run",
