@@ -10,5 +10,5 @@
     "declarationDir": "dist",
     "skipLibCheck": true
   },
-  "exclude": ["vite.config.ts", "demo"]
+  "exclude": ["vite.config.ts", "demo", "dist"]
 }
