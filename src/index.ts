@@ -6,6 +6,7 @@ export {
 } from "./contexts/LocalizationContext";
 
 export { useLocalization, useL10n } from "./hooks/useLocalization";
+export { useLocalizations, useL10ns } from "./hooks/useLocalizations";
 export { useH5PInstance } from "./hooks/useH5PInstance";
 export { useContentId } from "./hooks/useContentId";
 
