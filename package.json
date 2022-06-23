@@ -14,7 +14,7 @@
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
     "build": "tsc src/index.ts --outDir dist --declaration",
-    "publish-to-npm": "np"
+    "publish-to-npm": "npm run build && np"
   },
   "repository": {
     "type": "git",
