@@ -21,9 +21,10 @@ describe(useLocalizations.name, () => {
       </L10nContext.Provider>,
     );
 
-    expect(container.querySelector("#test")?.innerHTML).toBe(
-      translations.title,
-    );
+    const expected = translations.title;
+    const actual = container.querySelector("#test")?.innerHTML;
+
+    expect(actual).toBe(expected);
   });
 
   it("should show an error if the queried translation key does not exist in the translation set", () => {
@@ -41,8 +42,9 @@ describe(useLocalizations.name, () => {
       </L10nContext.Provider>,
     );
 
-    expect(container.querySelector("#test")?.innerHTML).toBe(
-      "Missing translation: body",
-    );
+    const expected = "[Missing translation: body]";
+    const actual = container.querySelector("#test")?.innerHTML;
+
+    expect(actual).toBe(expected);
   });
 });
