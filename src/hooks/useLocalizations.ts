@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { L10nContext } from "../contexts/LocalizationContext";
 import { Translations } from "../types/Translations";
+import { getFallbackString } from "../utils";
 
 /**
  * @param translationKeys A list of valid translation keys
@@ -26,7 +27,7 @@ export const useLocalizations = <TranslationKey extends string = string>(
   return Object.fromEntries(
     translationKeys.map(key => [
       key,
-      translations[key] ?? `Missing translation: ${key}`,
+      translations[key] ?? getFallbackString(key),
     ]),
   ) as Record<typeof translationKeys[number], string>;
 };
