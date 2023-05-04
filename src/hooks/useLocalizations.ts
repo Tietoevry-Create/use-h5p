@@ -21,7 +21,7 @@ import { getFallbackString } from "../utils";
  */
 export const useLocalizations = <TranslationKey extends string = string>(
   ...translationKeys: Array<TranslationKey>
-): Record<typeof translationKeys[number], string> => {
+): Record<TranslationKey, string> => {
   const translations = useContext(L10nContext);
 
   return Object.fromEntries(
@@ -29,6 +29,6 @@ export const useLocalizations = <TranslationKey extends string = string>(
       key,
       translations[key] ?? getFallbackString(key),
     ]),
-  ) as Record<typeof translationKeys[number], string>;
+  ) as Record<TranslationKey, string>;
 };
 export const useL10ns = useLocalizations;

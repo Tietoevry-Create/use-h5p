@@ -52,8 +52,8 @@ export const MyComponent: React.FC = () => {
   const contentId = useContentId();
   const absoluteImageUrl = H5P.getPath("relative/image/path", contentId);
 
-  return <img src={absoluteImageUrl} alt="" />
-}
+  return <img src={absoluteImageUrl} alt="" />;
+};
 ```
 
 ### `H5PContext` / `useH5PInstance`
@@ -99,14 +99,16 @@ export const MyComponent: React.FC = () => {
   const triggerFullscreen = () => {
     const $fullscreenElement = H5P.jQuery(elementRef.current!);
     H5P.fullscreen($fullscreenElement, contentType);
-  }
+  };
 
   return (
     <div ref={elementRef}>
-      <button type="button" onClick={triggerFullscreen}>Fullscreen</button>
+      <button type="button" onClick={triggerFullscreen}>
+        Fullscreen
+      </button>
     </div>
   );
-}
+};
 ```
 
 ### `L10nContext` / `useTranslation`
@@ -124,11 +126,12 @@ import { MyComponent } from "./my-component";
 
 type Params = {
   l10n: Record<string, string>;
-}
+};
 
 class MyContentType
   extends H5PContentType<Params>
-  implements IH5PContentType<Params> {
+  implements IH5PContentType<Params>
+{
   attach($container: JQuery<HTMLElement>) {
     const containerElement = $container.get(0)!;
 
@@ -160,5 +163,5 @@ export const MyComponent: React.FC = () => {
       <p>{t("description")}</p>
     </>
   );
-}
+};
 ```
