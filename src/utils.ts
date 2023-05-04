@@ -1,1 +1,2 @@
-export const getFallbackString = (translationKey: string): string => `[Missing translation: ${translationKey}]`
+export const getFallbackString = (translationKey: string): string =>
+  `[Missing translation: ${translationKey}]`;
