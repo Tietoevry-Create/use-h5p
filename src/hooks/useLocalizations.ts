@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { L10nContext } from "../contexts/LocalizationContext";
-import { Translations } from "../types/Translations";
 import { getFallbackString } from "../utils";
 
 /**
