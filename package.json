@@ -48,5 +48,8 @@
   "peerDependencies": {
     "react": ">= 17.0.1"
   },
-  "prettier": "prettier-config"
+  "prettier": "prettier-config",
+  "engines": {
+    "node": ">= 16.0.0"
+  }
 }
