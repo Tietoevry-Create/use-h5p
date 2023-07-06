@@ -1,5 +1,7 @@
 # use-h5p
 
+⚠️ This repository is no longer maintained. `use-h5p` has been moved to [h5p-types](https://github.com/boyum/h5p-types/tree/main/packages/use-h5p).
+
 React Hooks to be used with H5P.
 
 ## Install
